@@ -55,4 +55,4 @@
 Подключением файла task-field-users.php:
 `require_once __DIR__ . '/handlers/task-field-users.php';`
 Для отключения закомментируйте строку:
-`\\require_once __DIR__ . '/handlers/task-field-users.php';`
+`// require_once __DIR__ . '/handlers/task-field-users.php';`
