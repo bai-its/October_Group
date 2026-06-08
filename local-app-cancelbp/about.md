@@ -1,4 +1,4 @@
-# Доработка с кнопкой отмены БП
+# Доработка с кнопкой запуска БП с отменой процессов
 [Исходный код (пример приложения)](/local-app-cancelbp/local-app/)
 
 [Ссылка на пример приложения на портале](https://bitrix.octobergroup.ru/bitrix/admin/fileman_admin.php?lang=ru&&path=%2Flocal%2Fapps%2Fbtn_cancel_approval&site=s1)
