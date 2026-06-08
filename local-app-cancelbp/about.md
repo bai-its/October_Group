@@ -33,7 +33,7 @@
 
 - Загрузить папку с приложением в [/local/apps](https://bitrix.octobergroup.ru/bitrix/admin/fileman_admin.php?PAGEN_1=1&SIZEN_1=20&lang=ru&path=%2Flocal%2Fapps&site=s1&fu_action=)
 
-- В [index.html](/local-app-cancelbp/local-app/index.html) поменять настройки для установки нового поля 
+- В [index.html](/local-app-cancelbp/local-app/index.html) поменять настройки для установки нового типа поля 
 
     ```
     var handlerUrl = 'https://bitrix.octobergroup.ru/local/apps/название_папки_с_новым_приложением/index.php';
