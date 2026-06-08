@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание пользовательского поля</title>    <script src="https://api.bitrix24.com/api/v1/"></script>
+</head>
+<body>
+
+
+    <pre id="log"></pre>
+
+    <script>
+        function logMessage(message) {
+            const log = document.getElementById('log');
+            log.textContent += message + "\n";
+        }
+
+            var handlerUrl = 'https://bitrix.octobergroup.ru/local/apps/btn_cancel_approval/index.php';
+            var type = 'BTN_cancel_approval';
+            var propCode = 'BTNcancelapproval';
+            var title = 'Отменить согласование';
+
+            BX24.callMethod(
+                'userfieldtype.add',
+                {
+                    'USER_TYPE_ID': type,
+                    'HANDLER': handlerUrl,
+                    'TITLE': title,
+                },
+                function(resultAddPropType) {
+                    if (resultAddPropType.error()) {
+                        logMessage("Ошибка: " + resultAddPropType.error() + ": " + resultAddPropType.error_description());
+                        console.error(resultAddPropType.error() + ': ' + resultAddPropType.error_description());
+                    } else {
+                        logMessage("Тип свойства '" + type + "' успешно создан");
+                        console.log('property type ' + type + ' has been added successful');
+                    }
+                }
+            );
+    </script>
+</body>
+</html>
